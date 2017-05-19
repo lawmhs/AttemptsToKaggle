@@ -12,3 +12,5 @@ combine = [train_df, test_df]
 
 print(train_df.columns.values)
 
+# for now lets work with Passenger ID, Pclass, Sex, Age
+
