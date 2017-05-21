@@ -10,7 +10,7 @@ import random as rnd
 
 # for visualization
 import seaborn as sns
-import matplotlib.pyplot
+import matplotlib.pyplot as plt
 
 # MACHINE LEARNING STUFF
 import numpy as np
@@ -46,8 +46,4 @@ print(train_df[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort
 # will output a table with columns "sex" and "survived"
 # the pivoting
 
-# data visualization
-
-g = sns.FacetGrid(train_def, col='Survived')
-g.map(plt.hst, 'Age', bins=20)
 
