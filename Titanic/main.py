@@ -36,4 +36,5 @@ print(train_df[['Pclass', 'Survived']].groupby(['Pclass'], as_index=False).mean(
 # we will see a positive correlation with female and surviving, and a negative one for male and surviving
 print(train_df[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False))
 
-
+sex_pivot = train_df[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+print(sex_pivot.columns.values)
