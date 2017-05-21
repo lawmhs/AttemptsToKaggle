@@ -4,10 +4,16 @@
 
 # this is more or less a playground exploring his methodology
 
+# for data anlysis
 import pandas as pd
 import random as rnd
 
+# for visualization
+import seaborn as sns
+import matplotlib.pyplot as plt
+%matplotlib inline
 
+# MACHINE LEARNING STUFF
 import numpy as np
 import scipy as sp
 import sklearn as sk
@@ -36,5 +42,13 @@ print(train_df[['Pclass', 'Survived']].groupby(['Pclass'], as_index=False).mean(
 # we will see a positive correlation with female and surviving, and a negative one for male and surviving
 print(train_df[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False))
 
-sex_pivot = train_df[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False)
-print(sex_pivot.columns.values)
+
+# train_df[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False) 
+# will output a table with columns "sex" and "survived"
+# the pivoting
+
+# data visualization
+
+g = sns.FacetGrid(train_def, col='Survived')
+g.map(plt.hst, 'Age', bins=20)
+
