@@ -10,8 +10,7 @@ import random as rnd
 
 # for visualization
 import seaborn as sns
-import matplotlib.pyplot as plt
-%matplotlib inline
+import matplotlib.pyplot
 
 # MACHINE LEARNING STUFF
 import numpy as np
