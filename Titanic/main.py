@@ -3,6 +3,8 @@
 # for his guided tutorial
 
 # this is more or less a playground exploring his methodology
+# for now have been copying his code line by line and seeing how it works to try and understand his techniques
+# uploading my comments so as not to lose them
 
 # for data anlysis
 import pandas as pd
